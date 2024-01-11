@@ -988,6 +988,7 @@ margin-left: 102px;
 
 
 }
+/* десь я тут натупила з маржинами і розположенням елементів */
 
 .social-item-footer {
   width: 40px;
@@ -1034,6 +1035,42 @@ gap: 16px;
   }
 
 
-  @media screen and (min-width: 321px) and (max-width: 768px) {}
+  @media screen and (min-width: 321px) and (max-width: 768px) {
+    /* header */
+    .webstudio {
+  display: inline-flex;
+align-items: center;
+flex-shrink: 0;
+  margin-left: 16px;
+}
+.header-nav-list {
+ display: inline-flex;
+align-items: flex-start;
+flex-shrink: 0;
+margin-left: 120px;
+}
+
+
+
+
+
+
+
+
+
+.address {
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  margin-left: 121px;
+}
+.adress-list {
+  column-gap: 12px;
+}
+
+}
+
+
+ 
     @media screen and (min-width: 769px) and (max-width: 1158px) {}
 
