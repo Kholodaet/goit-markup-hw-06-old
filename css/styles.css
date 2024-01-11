@@ -766,3 +766,46 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   background-color: #404bbf;
   cursor: pointer;
 }
+
+
+@media only screen and (max-width: 320px) {
+  /* Додайте ваші стилі для мобільних екранів тут */
+
+  /* Наприклад, ви можете хотіти виставити елементи навігації один над одним */
+  .header-nav-list {
+    flex-direction: column;
+  }
+
+  /* Адаптуйте розміри шрифтів або відступи для кращої читабельності на мобільних пристроях */
+  .first-section-title {
+    font-size: 24px;
+  }
+
+  /* Сховайте деякі елементи, які можуть бути непотрібними на невеликих екранах */
+  .some-element {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+
+.second-section {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+.second-section-list {
+  
+
+  display: flex;
+width: 288px;
+flex-direction: column;
+align-items: flex-start;
+gap: 8px;
+}
+.second-section-item {
+  width: calc((100% - 3 * 72px) / 4);
+}
+
+}
+
+
