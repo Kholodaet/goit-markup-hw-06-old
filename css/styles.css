@@ -769,43 +769,69 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 
 
 @media only screen and (max-width: 320px) {
-  /* Додайте ваші стилі для мобільних екранів тут */
-
-  /* Наприклад, ви можете хотіти виставити елементи навігації один над одним */
+ 
   .header-nav-list {
     flex-direction: column;
   }
 
-  /* Адаптуйте розміри шрифтів або відступи для кращої читабельності на мобільних пристроях */
+ 
   .first-section-title {
-    font-size: 24px;
+   
+
+font-size: 36px;
+
+
   }
-
-  /* Сховайте деякі елементи, які можуть бути непотрібними на невеликих екранах */
-  .some-element {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 320px) {
-
-.second-section {
+  .second-section {
   padding-top: 96px;
   padding-bottom: 96px;
 }
 .second-section-list {
-  
-
   display: flex;
 width: 288px;
 flex-direction: column;
 align-items: flex-start;
 gap: 8px;
 }
-.second-section-item {
-  width: calc((100% - 3 * 72px) / 4);
+
+
+ 
+
+
+  .first-section{
+    width: 320px;
+height: 432px;
+flex-shrink: 0;
+
+
+  }
 }
 
+
+
+
+
+@media only screen and (max-width: 1157px) {
+ 
+  .icons-second-section {
+    display: none;
+  }
 }
 
 
+@media (min-resolution: 192dpi) {
+  .first-section {
+    background-image: url('../images/officetable@2x.jpg');
+      background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/officetable.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 320px;
+  margin: 0 auto;
+}
+  }
+}
