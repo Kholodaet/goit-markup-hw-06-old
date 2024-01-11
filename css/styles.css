@@ -24,6 +24,16 @@ ul {
   padding: 0;
   margin: 0;
 }
+
+
+.mobile-adress-container{
+  display: none;
+}
+
+
+.mobile-social-container{
+  display:none;
+}
 /* header */
 .header {
   border-bottom: 1px solid #e7e9fc;
@@ -129,6 +139,7 @@ ul {
 
 .burger-menu{
   display: none;
+  margin-left: 149px;
 }
 
 .mobile-container{
@@ -233,7 +244,7 @@ gap: 40px;
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
-/* third section */
+/* third section   */
 
 .third-section {
   background-color: #f4f4fd;
@@ -860,6 +871,8 @@ flex-shrink: 0;
 
 
   }
+
+
 }
 
 
@@ -888,3 +901,54 @@ flex-shrink: 0;
 
 }
   }
+
+
+
+
+  @media screen and (max-width: 320px) {
+ .second-section {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+.second-section-list {
+  display: flex;
+flex-direction: column;
+gap: 8px;
+}
+
+.title-section-s{
+text-align: center;
+font-size: 36px;
+font-weight: 700;
+line-height: 1.11; 
+}
+
+.p-section-s {
+  align-self: stretch;
+font-weight: 500;
+ 
+}
+
+.second-section-item{
+  width: 100%; 
+}
+
+  
+    .third-section {
+  
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+.third-section-list {
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+}
+
+  }
+
+
+  @media screen and (min-width: 321px) and (max-width: 768px) {}
+    @media screen and (min-width: 769px) and (max-width: 1158px) {}
+
